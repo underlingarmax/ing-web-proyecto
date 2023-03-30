@@ -6,6 +6,6 @@
 3. Mostrar datos de bus.
 4. Mostrar datos de conductor.
 5. Enviar sugerencias y reclamos.
-6. Ingresar datos de buses y conductores nuevos.
-7. 
+6. CRUD para datos de buses y conductores.
+7. Listado de buses, tipo(en base al combustible que usan), ruta que realiza y mapa con su última ubicación.
 
