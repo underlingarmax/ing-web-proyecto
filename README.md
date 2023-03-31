@@ -11,4 +11,4 @@
 
 (Sugerencia)
 1) Buscar buses para llegar a un destino o direccion(que micros pasan por libertad por ejemplo)
-2) 
+2) Indicar la cantidad de pasajeros en el bus (sentados y parados)
