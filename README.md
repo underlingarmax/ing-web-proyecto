@@ -1,4 +1,4 @@
-# Proyecto Ingeniería Web
+# Proyecto Ingeniería Web: App de Buses V-Region
 ## EP1.1: Análisis de funcionalidades
 
 1. Mostrar noticias recientes,cambios de ruta y alertas.
