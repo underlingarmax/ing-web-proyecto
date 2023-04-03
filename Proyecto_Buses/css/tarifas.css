@@ -1,0 +1,25 @@
+/*Escoger una Unidad*/
+section ul{
+    list-style: none;
+    font-size: 30px;
+    text-align: center;
+}
+section ul p{
+    border: 1px solid;
+    width: 150px;
+    height: auto;
+    background-color: white;
+    margin-left: 45%;
+}
+
+/*Edicion de la tabla*/
+section table{
+    margin-left: 35%;
+    border: 1px solid;
+    font-size: 40px;
+    background-color:brown;
+}
+td, th{
+    border: 1px solid;
+    text-align: center;
+}
