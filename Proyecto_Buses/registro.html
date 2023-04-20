@@ -33,19 +33,24 @@
             <form id="form">
                 <ul>
                     <li><label>Nombre</label></li>
-                    <li><input type="text" id="nombre" placeholder="Ingrese nombre y apellido"></li>
+                    <li><input type="text" id="nombre" placeholder="Ingrese nombre y apellido" required></li>
+                    <li><span></span></li>
 
                     <li><label>Correo electronico</label></li>
-                    <li><input type="email" id="correo" placeholder="Ingrese su correo"></li>
+                    <li><input type="email" id="correo" placeholder="Ingrese su correo" required></li>
+                    <li><span></span></li>
 
-                    <li><label>RUT</label></li>
-                    <li><input type="text" id="rut" placeholder="Ingrese su rut"></li>
+                    <li><label>RUT (ej: 12345678-9)</label></li>
+                    <li><input type="text" id="rut" placeholder="Ingrese su rut" required></li>
+                    <li><span></span></li>
 
                     <li><label>Nueva Contraseña</label></li>
-                    <li><input type="password" id="pass" placeholder="Ingrese una contraseña"></li>
+                    <li><input type="password" id="pass" placeholder="Ingrese una contraseña" required></li>
+                    <li><span></span></li>
 
                     <li><label>Confirmar Contraseña</label></li>
-                    <li><input type="password" id="pass" placeholder="Vuelve a ingresar la contraseña"></li>
+                    <li><input type="password" id="pass_confirm" placeholder="Vuelve a ingresar la contraseña" required></li>
+                    <li><span></span></li>
 
                     <li><button type="submit">Registrarse</button></li>
                 </ul>
@@ -53,6 +58,6 @@
         </div>
 
         
-        <script src="" async defer></script>
+        <script src="js/registro.js" async defer></script>
     </body>
 </html>
