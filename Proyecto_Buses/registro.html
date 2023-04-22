@@ -33,18 +33,22 @@
             <form id="form">
                 <ul>
                     <li><label>Nombre</label></li>
-                    <li><input type="text" id="nombre" placeholder="Ingrese nombre y apellido" required></li>
+                    <li><input type="text" id="nombre" placeholder="Ingrese su nombre(s)" required></li>
+                    <li><span></span></li>
+
+                    <li><label>Apellido</label></li>
+                    <li><input type="text" id="apellido" placeholder="Ingrese su apellido(s)" required></li>
                     <li><span></span></li>
 
                     <li><label>Correo electronico</label></li>
                     <li><input type="email" id="correo" placeholder="Ingrese su correo" required></li>
                     <li><span></span></li>
 
-                    <li><label>RUT (ej: 12345678-9)</label></li>
-                    <li><input type="text" id="rut" placeholder="Ingrese su rut" required></li>
+                    <li><label>RUT (sin puntos con guion)</label></li>
+                    <li><input type="text" id="rut" placeholder="Ej: 12345678-9" required></li>
                     <li><span></span></li>
 
-                    <li><label>Nueva Contraseña</label></li>
+                    <li><label>Nueva Contraseña (Minimo 8 caracteres)</label></li>
                     <li><input type="password" id="pass" placeholder="Ingrese una contraseña" required></li>
                     <li><span></span></li>
 
@@ -52,12 +56,13 @@
                     <li><input type="password" id="pass_confirm" placeholder="Vuelve a ingresar la contraseña" required></li>
                     <li><span></span></li>
 
-                    <li><button type="submit">Registrarse</button></li>
+                    <li><button type="submit">Registrarse</button> <span></span></li>
                 </ul>
             </form>
         </div>
 
         
         <script src="js/registro.js" async defer></script>
+        <script src="js/validacion.js" async defer></script>
     </body>
 </html>
