@@ -17,7 +17,9 @@ $(document).ready(function(){
             },
             rut:{
                 required: true,
-                rutFormato: true
+                rutFormato: true,
+                maxlength: 10,
+                minlength: 9
             },
             pass:{
                 required: true,
@@ -30,14 +32,14 @@ $(document).ready(function(){
         },
         messages: {
             nombre:{
-                required: "Este campo es obligatorio",
+                required: "El nombre es necesario para identificarlo",
                 strCheck: "Los caracteres admitidos son ",
                 maxlenght: "El nombre debe tener 30 caracteres como maximo"
             },
             apellido:{
-                required: "Este campo es obligatorio",
+                required: "El apellido es necesario para identificarlo",
                 strCheck: "Los caracteres admitidos",
-                maxlenght: "El nombre debe tener 30 caracteres como maximo"
+                maxlenght: "El apellido debe tener 30 caracteres como maximo"
             },
             correo:{
                 required: "El correo es obligatorio para enviar informaciones",
@@ -45,7 +47,9 @@ $(document).ready(function(){
             },
             rut:{
                 required: "El rut es necesario para validar que es usted",
-                rutFormato: "El formato de este rut no es valido"
+                rutFormato: "El formato de este rut no es valido",
+                minlength: "El tamano minimo del rut son 9 caracteres (guion incluido)",
+                maxlenght: "El tamano maximo del rut son 10 caracteres (guion incluido)"
             },
             pass:{
                 required: "Requiere contrasena para proteger su sesion",

@@ -24,13 +24,17 @@ document.getElementById("validar").addEventListener("submit",function(revisar){
     if(validarPassword(pass)){check = false;}
 
     //Compara ambas contrasenas
-    if(pass != pass_confirm){check = false;}
+    if(pass != pass_confirm){
+        check = false;
+        if(pass != "" && pass_confirm != ""){listado[11].querySelector("span").innerHTML=("Ambas contrasenas no coinciden...");}    
+    }
+    else{listado[11].querySelector("span").innerHTML=("");}
 
     if(check){
         listado[12].querySelector("span").innerHTML=("Formulario valida exitosamente...");
-        listado[13].querySelector("span").innerHTML=("");
+        listado[13].querySelector("p").innerHTML=("");  
     }
-    else{listado[13].querySelector("span").innerHTML=("Algo salio mal...");}
+    else{listado[13].querySelector("p").innerHTML=("Se produjo algun error");}
 
     revisar.preventDefault()
 })

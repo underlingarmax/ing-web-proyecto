@@ -1,8 +1,8 @@
-<!<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -29,29 +29,32 @@
             </ul>
         </nav>
 
+        
+
         <div class="formulario">
             <form id="validar" novalidate>
+                <h1>Formulario De Registro</h1>
                 <ul>
-                    <li><label for="nombre">Nombre</label></li>
+                    <li><label for="nombre">Nombre<span>(Caracteres admitidos [A-Z] y [a-z] c/s espacios y maximo 30 caracteres)</span></label></li>
                     <li><input type="text"  id="nombre" name="nombre" placeholder="Ingrese su nombre(s)" ></li><br>
                     
-                    <li><label for="apellido">Apellido</label></li>
+                    <li><label for="apellido">Apellido<span>(Caracteres admitidos [A-Z] y [a-z] c/s espacios y maximo 30 caracteres)</span></label></li>
                     <li><input type="text"  id="apellido" name="apellido" placeholder="Ingrese su apellido(s)" ></li><br>
                     
                     <li><label for="correo">Correo electronico</label></li>
                     <li><input type="email"  id="correo" name="correo" placeholder="Ingrese su correo" ></li><br>
                     
-                    <li><label for="rut">RUT (sin puntos con guion)</label></li>
+                    <li><label for="rut">RUT<span>(Sin puntos con guion y el ultimo digito admite la 'k' o 'K')</span> </label></li>
                     <li><input type="text"  id="rut" name="rut" placeholder="Ej: 12345678-9" ></li><br>
                     
-                    <li><label for="pass">Nueva Contraseña (Minimo 8 caracteres)</label></li>
+                    <li><label for="pass">Nueva Contraseña <span>(Caracteres obligatorios [A-Z], [a-z] y [0-9], y minimo 8 caracteres)</span> </label></li>
                     <li><input type="password"  id="pass" name="pass" placeholder="Ingrese una contraseña" ></li><br>
                     
                     <li><label>Confirmar Contraseña</label></li>
-                    <li><input type="password" id="pass_confirm" name="pass_confirm" placeholder="Vuelve a ingresar la contraseña" ></li><br>
+                    <li><input type="password" id="pass_confirm" name="pass_confirm" placeholder="Vuelve a ingresar la contraseña" ><span id="compare"></span></li><br>
                     
                     <li><button type="submit">Registrarse</button> <span id="span"></span></li>
-                    <li><span></span></li>
+                    <li><p></p></li>
                 </ul>
             </form>
         </div>
