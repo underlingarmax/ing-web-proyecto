@@ -1,10 +1,11 @@
 $(document).ready(function(){
     $("#login_validar").validate({
-
         rules:{
             rut:{
                 required: true,
-                rutFormato: true
+                rutFormato: true,
+                maxlength: 10,
+                minlength: 9
             },
             contrasena:{
                 required: true,
@@ -14,7 +15,9 @@ $(document).ready(function(){
         messages:{
             rut:{
                 required: "Favor de ingresar su rut",
-                rutFormato: "Este formato no es valido"
+                rutFormato: "Este formato no es valido",
+                maxlength: "El tamano maximo del rut son 10 caracteres (guion incluido)",
+                minlength: "El tamano minimo del rut son 9 caracteres (guion incluido)"
             },
             contrasena:{
                 required: "Favor de ingresar su contrasena",

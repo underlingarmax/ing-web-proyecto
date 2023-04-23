@@ -34,12 +34,12 @@ $(document).ready(function(){
             nombre:{
                 required: "El nombre es necesario para identificarlo",
                 strCheck: "Los caracteres admitidos son  [A-Z] y [a-z] c/s espacios",
-                maxlenght: "El nombre debe tener 30 caracteres como maximo"
+                maxlength: "El nombre debe tener 30 caracteres como maximo"
             },
             apellido:{
                 required: "El apellido es necesario para identificarlo",
                 strCheck: "Los caracteres admitidos  [A-Z] y [a-z] c/s espacios",
-                maxlenght: "El apellido debe tener 30 caracteres como maximo"
+                maxlength: "El apellido debe tener 30 caracteres como maximo"
             },
             correo:{
                 required: "El correo es obligatorio para enviar informaciones",
@@ -49,7 +49,7 @@ $(document).ready(function(){
                 required: "El rut es necesario para validar que es usted",
                 rutFormato: "El formato de este rut no es valido",
                 minlength: "El tamano minimo del rut son 9 caracteres (guion incluido)",
-                maxlenght: "El tamano maximo del rut son 10 caracteres (guion incluido)"
+                maxlength: "El tamano maximo del rut son 10 caracteres (guion incluido)"
             },
             pass:{
                 required: "Requiere contrasena para proteger su sesion",
