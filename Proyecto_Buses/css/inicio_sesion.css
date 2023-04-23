@@ -44,12 +44,17 @@ section{display: flex;}
 
 .box button{
     font-size: 25px;
-    margin-left: 30%;
+    margin-left: 0%;
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
     background-color: orange;
     padding: 2%;
+}
+
+#span{
+    color:green;
+    font-size: 25px;
 }
 
 .box a{
