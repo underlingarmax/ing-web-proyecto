@@ -26,7 +26,10 @@ document.getElementById("validar").addEventListener("submit",function(revisar){
     //Compara ambas contrasenas
     if(pass != pass_confirm){check = false;}
 
-    if(check){listado[12].querySelector("span").innerHTML=("Formulario valida exitosamente...");}
+    if(check){
+        listado[12].querySelector("span").innerHTML=("Formulario valida exitosamente...");
+        listado[13].querySelector("span").innerHTML=("");
+    }
     else{listado[13].querySelector("span").innerHTML=("Algo salio mal...");}
 
     revisar.preventDefault()
