@@ -1,4 +1,4 @@
-document.getElementById("validar").addEventListener("submit",function(revisar){
+document.getElementById("registro_validar").addEventListener("submit",function(revisar){
 
 
     let nombre = document.getElementById("nombre").value;
@@ -7,7 +7,7 @@ document.getElementById("validar").addEventListener("submit",function(revisar){
     let rut = document.getElementById("rut").value;
     let pass = document.getElementById("pass").value;
     let pass_confirm = document.getElementById("pass_confirm").value;
-    const listado = document.getElementById("validar").getElementsByTagName("li");
+    const listado = document.getElementById("registro_validar").getElementsByTagName("li");
 
     var check = true;
 

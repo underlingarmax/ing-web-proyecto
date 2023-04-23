@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("#validar").validate({
+    $("#registro_validar").validate({
         rules: {
             nombre:{
                 required: true,
@@ -33,12 +33,12 @@ $(document).ready(function(){
         messages: {
             nombre:{
                 required: "El nombre es necesario para identificarlo",
-                strCheck: "Los caracteres admitidos son ",
+                strCheck: "Los caracteres admitidos son  [A-Z] y [a-z] c/s espacios",
                 maxlenght: "El nombre debe tener 30 caracteres como maximo"
             },
             apellido:{
                 required: "El apellido es necesario para identificarlo",
-                strCheck: "Los caracteres admitidos",
+                strCheck: "Los caracteres admitidos  [A-Z] y [a-z] c/s espacios",
                 maxlenght: "El apellido debe tener 30 caracteres como maximo"
             },
             correo:{
