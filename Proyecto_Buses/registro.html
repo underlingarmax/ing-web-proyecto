@@ -30,39 +30,36 @@
         </nav>
 
         <div class="formulario">
-            <form id="form">
+            <form id="validar" novalidate>
                 <ul>
-                    <li><label>Nombre</label></li>
-                    <li><input type="text" id="nombre" placeholder="Ingrese su nombre(s)" required></li>
-                    <li><span></span></li>
-
-                    <li><label>Apellido</label></li>
-                    <li><input type="text" id="apellido" placeholder="Ingrese su apellido(s)" required></li>
-                    <li><span></span></li>
-
-                    <li><label>Correo electronico</label></li>
-                    <li><input type="email" id="correo" placeholder="Ingrese su correo" required></li>
-                    <li><span></span></li>
-
-                    <li><label>RUT (sin puntos con guion)</label></li>
-                    <li><input type="text" id="rut" placeholder="Ej: 12345678-9" required></li>
-                    <li><span></span></li>
-
-                    <li><label>Nueva Contraseña (Minimo 8 caracteres)</label></li>
-                    <li><input type="password" id="pass" placeholder="Ingrese una contraseña" required></li>
-                    <li><span></span></li>
-
+                    <li><label for="nombre">Nombre</label></li>
+                    <li><input type="text"  id="nombre" name="nombre" placeholder="Ingrese su nombre(s)" ></li><br>
+                    
+                    <li><label for="apellido">Apellido</label></li>
+                    <li><input type="text"  id="apellido" name="apellido" placeholder="Ingrese su apellido(s)" ></li><br>
+                    
+                    <li><label for="correo">Correo electronico</label></li>
+                    <li><input type="email"  id="correo" name="correo" placeholder="Ingrese su correo" ></li><br>
+                    
+                    <li><label for="rut">RUT (sin puntos con guion)</label></li>
+                    <li><input type="text"  id="rut" name="rut" placeholder="Ej: 12345678-9" ></li><br>
+                    
+                    <li><label for="pass">Nueva Contraseña (Minimo 8 caracteres)</label></li>
+                    <li><input type="password"  id="pass" name="pass" placeholder="Ingrese una contraseña" ></li><br>
+                    
                     <li><label>Confirmar Contraseña</label></li>
-                    <li><input type="password" id="pass_confirm" placeholder="Vuelve a ingresar la contraseña" required></li>
-                    <li><span></span></li>
-
+                    <li><input type="password" id="pass_confirm" name="pass_confirm" placeholder="Vuelve a ingresar la contraseña" ></li><br>
+                    
                     <li><button type="submit">Registrarse</button> <span></span></li>
+                    <li><span></span></li>
                 </ul>
             </form>
         </div>
 
-        
-        <script src="js/registro.js" async defer></script>
-        <script src="js/validacion.js" async defer></script>
+        <script src="js/jquery-3.6.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js" defer></script>
+        <script src="js/registro_jQuery.js"></script>
+        <script src="js/registro.js"></script>
+        <script src="js/validacion.js"></script>
     </body>
 </html>

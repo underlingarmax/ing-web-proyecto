@@ -2,7 +2,7 @@
     width: 50%;
     border: 1px solid;
     margin: 5% 0% 0% 25%;
-    background-color:salmon;
+    background-color:grey;
 }
 
 .formulario ul{
@@ -13,7 +13,12 @@
     font-size: 30px;
 }
 
-.formulario input{
+.formulario label.error{
+    color: red;
+    display: block;
+}
+
+.formulario input {
     border: 2px solid darkgrey;
     color: white;
     background-color: black;
@@ -25,6 +30,11 @@
     margin: 0.5% 0% 1% 0%;
 }
 
+.formulario input.error{
+    border: 3px dashed red;
+    color: red;
+}
+
 .formulario button{
     font-size: 25px;
     color: white;
@@ -32,4 +42,13 @@
     border-radius: 5px;
     background-color: dodgerblue;
     padding: 1% 1% 1% 1%;
+}
+
+span{
+    color:lightgreen;
+    font-size: 25px;
+}
+
+li span{
+    color: red;
 }
